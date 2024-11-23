@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>$19</title>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
 
-        main {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
+      section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 4em 0;
+        border-top: 1px solid silver;
+      }
+
+      blockquote {
+        border-left: 4px solid grey;
+        padding-left: 1em;
+      }
+
+      blockquote::before,
+      blockquote::after {
+        content: '"';
+      }
     </style>
-</head>
-<body>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <main>
+      <section>
         <h1>Nineteen Dollar</h1>
         <p>$19</p>
-    
-        <img src="https://picsum.photos/seed/19/1000/720" alt="Random image">
+
+        <img src="https://picsum.photos/seed/19/1000/720" alt="Random image" />
+      </section>
+
+      <section>
+        <blockquote>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          voluptatibus perspiciatis voluptates incidunt ullam. Nihil quaerat
+          debitis omnis inventore, optio aliquid nam nostrum quis, quisquam
+          nesciunt, ducimus ex odit quibusdam nisi excepturi? Tempore vel
+          aliquam nobis voluptatum praesentium, quas fugiat laborum animi,
+          maxime ullam quis modi corporis odit qui eos.
+        </blockquote>
+      </section>
     </main>
-</body>
+  </body>
 </html>
